@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Poppins;
+    background-color: #ff87b9;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 2;
+}
+
+.header .logo img {
+    height: 10rem;
+    position: relative;
+    left: -5rem;
+}
+
+.header .navbar #close {
+    display: none;
+    position: absolute;
+    top: 20rem;
+    right: 2rem;
+    cursor: pointer;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: #d3ad7f;
+}
+
+.header #menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: xx-large;
+    padding: 100px 0;
+}
+
+.listProduct .item img {
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+
+/* // ipad */
+@media only screen and (max-width: 992px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .detail {
+        grid-template-columns: 40% 1fr;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+   
+}

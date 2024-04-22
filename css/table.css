@@ -1,0 +1,86 @@
+* {
+    font-family: sans-serif;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 30px 10px;
+    font-size: 0.9em;
+    width: 100%; /* Set width to 100% */
+    border-radius: 5px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    background-color: #ffffff; /* Change background color to white */
+}
+
+.content-table thead tr {
+    background-color: #CF9FFF;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 5px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #CF9FFF;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #CF9FFF;
+}
+
+.content-table th.action-header,
+.content-table td.action-header {
+    text-align: center;
+    width: 10%; /* Fixed width for action column */
+}
+
+.content-table th.edit,
+.content-table th.delete,
+.content-table th.download,
+.content-table th.archive,
+.content-table td.archive,
+.content-table td.edit,
+.content-table td.delete,
+.content-table td.download {
+    text-align: center;
+    width: 10%; /* Fixed width for action buttons */
+}
+
+.content-table td.edit i,
+.content-table td.delete i,
+.content-table td.archive i,
+.content-table td.download i {
+    width: 20px; /* Fixed width for icon */
+}
+
+/* Hover effect for action buttons */
+.content-table td.edit button:hover,
+.content-table td.delete button:hover,
+.content-table td.archive button:hover,
+.content-table td.download button:hover {
+    cursor: pointer;
+    background-color: #CF9FFF;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.content-table td {
+    text-align: center;
+}
+
+.content-table col.action-col {
+    width: 10%;
+}

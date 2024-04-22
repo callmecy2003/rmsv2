@@ -1,0 +1,25 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Set to 100% to match the table width */
+}
+
+.search-bar label {
+    margin-right: 10px;
+}
+
+.search-bar input[type="search"] {
+    flex: 1; /* Take up remaining space */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #009879;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
